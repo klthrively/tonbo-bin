@@ -80,7 +80,7 @@ cat > $DEV_SITE_PATH/bin/restore.sh <<-EOF
 MYSQL="mysql --login-path=$SITE_SLUG -u $DB_USER -D $DB_NAME"
 OLD_HOSTS="https://$SITE_SLUG.wpengine.com http://$SITE_SLUG.wpengine.com $PRODUCTION_URL"
 NEW_HOST="http://dev.$SITE_DOMAIN"
-
+DATABASE="$DB_NAME"
 
 ##
 ## Shouldn't have to edit anything below here.

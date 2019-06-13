@@ -135,7 +135,7 @@ server {
     error_log 			    /usr/local/var/log/nginx/dev.$SITE_DOMAIN.error.log;
 
     # substitute your web server's root folder with yours
-    root			    /Users/kristenlindsey/dev/dev.$SITE_DOMAIN;
+    root			    /Users/$USER/dev/dev.$SITE_DOMAIN;
 
     location ~ \\.php\$ {
         try_files                   \$uri =404;
